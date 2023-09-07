@@ -27,7 +27,7 @@ import { FormattedMessage } from '@edx/frontend-platform/i18n';
 const messages = {
   'en': {
     "embed.head": 'Welcome!',
-    "embed.content": 'This page demonstrates how to routes can be defined for the piral instance itself.',
+    "embed.content": 'This page demonstrates how routes can be defined for the piral instance itself.',
   },
 };
 
@@ -78,6 +78,18 @@ subscribe(APP_READY, () => {
    * so that different Pilet configurations can be dynamically defined at build or runtime to satisfy
    * alternative deployment models.
    */
+
+  const useLocalFeed = eval(process.env.USE_LOCAL_PILETS);
+  let feedUrl;
+
+  if (!useLocalFeed) {
+    feedUrl = process.env.PILET_FEED_URL;
+  } else {
+    feedUrl = 'http://localhost:1234/api/v1/feed/lms';
+  }
+  
+  //const feedUrl = '';
+
   const instance = createInstance({
     async: true,
     debug: true,
@@ -94,7 +106,7 @@ subscribe(APP_READY, () => {
       createPlatformApi(),
     ],
     requestPilets() {
-      return fetch('http://localhost:1234/api/v1/feed/lms')
+      return fetch(feedUrl)
         .then((res) => res.json())
         .then((res) => res.items);
     },
