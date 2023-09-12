@@ -1,0 +1,39 @@
+$fa-font-path: "~font-awesome/fonts";
+@import "~font-awesome/scss/font-awesome";
+
+@import "~@edx/brand/paragon/fonts";
+@import "~@edx/brand/paragon/variables";
+@import "~@edx/paragon/scss/core/core";
+@import "~@edx/brand/paragon/overrides";
+
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  main {
+    flex-grow: 1;
+  }
+
+  header {
+    flex: 0 0 auto;
+
+    .logo {
+      display: block;
+      box-sizing: content-box;
+      position: relative;
+      top: 0.1em;
+      height: 1.75rem;
+      margin-right: 1rem;
+      img {
+        display: block;
+        height: 100%;
+      }
+    }
+  }
+
+  footer {
+    flex: 0;
+  }
+}
