@@ -35,9 +35,14 @@ In order to make local changes to the MFEs loaded by this project 4 additional p
 - [Header Component Fork](https://github.com/hammerlabs-net/frontend-component-header)
 
 Clone the MFE repositories to a common parent directory of where you cloned this repository. After cloning:
+
 0. Run `nvm use 18.16.1`
 1. Switch all forks to their `oep65` branches.
-3. Run `npm install && npm run build` on all projects IN THIS ORDER:`frontend-app-shell` (this project), `frontend-component-footer`, `frontend-component-header`, `frontend-app-account`, `frontend-app-learning`  
+2. Run `npm install && npm run build` on this project (`frontend-app-shell`)
+3. Run the following commands on these projects in this order: `frontend-component-footer`, `frontend-component-header`, `frontend-app-account`, `frontend-app-learning`:
+
+```npm uninstall frontend-app-shell && npm install --save-dev ../frontend-app-shell/dist/emulator/frontend-app-shell-1.0.0.tgz && npm run build``` 
+
 4. Modify the `USE_LOCAL_PILETS` environment variable to `true`
 5. Run `npm start` in this project.
 6. Access the running instance at http://localhost:1234/
