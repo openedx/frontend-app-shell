@@ -33,6 +33,7 @@
   },
   "scripts": {
     "start": "piral debug",
+    "start:with-theme": "paragon install-theme && npm start && npm install",
     "build": "piral build --type emulator",
     "postinstall": "piral declaration",
     "setup": "node bin/install"
