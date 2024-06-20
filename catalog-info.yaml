@@ -7,6 +7,6 @@ metadata:
   name: 'frontend-app-shell'
   description: "A Piral shell application for use with Open edX MFEs."
 spec:
-  owner: group:openedx-unmaintained
+  owner: user:arbrandes
   type: 'service'
   lifecycle: 'production'
