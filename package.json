@@ -9,7 +9,7 @@
     "extends @edx/browserslist-config"
   ],
   "dependencies": {
-    "@edx/brand": "npm:@edx/brand-openedx@1.2.0",
+    "@edx/brand": "npm:@edx/brand-openedx@1.2.1",
     "@edx/frontend-platform": "^5.3.0",
     "@edx/paragon": "^21.1.2",
     "piral-base": "1.0.1",
