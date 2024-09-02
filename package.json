@@ -68,7 +68,7 @@
     "@edx/reactifex": "1.1.0",
     "copy-webpack-plugin": "^11.0.0",
     "piral-cli": "1.0.1",
-    "piral-cli-dotenv": "^0.2.0",
+    "piral-cli-dotenv": "^0.3.0",
     "piral-cli-webpack5": "1.0.1",
     "reactifex": "1.1.1",
     "webpack-merge": "^5.8.0"
