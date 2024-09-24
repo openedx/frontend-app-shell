@@ -31,7 +31,7 @@ async function processRepository(repo) {
 }
 
 
-const requiredNodeVersion = 'v18.16.1';
+const requiredNodeVersion = 'v20';
 
 async function verifyNodeVersion() {
   const { stdout } = await exec('node -v');

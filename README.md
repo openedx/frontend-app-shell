@@ -10,7 +10,7 @@ The Goal of this POC is to provide a working example of an Open edX frontend dep
 
 ## Running
 
-Node.js version 18.16.1 was used to develop this prototype. Other versions may work but they are untested. Please consider using nvm for easy compatibility. 
+Node.js version 20 was used to develop this prototype. Other versions may work but they are untested. Please consider using nvm for easy compatibility. 
 
 ### Running:
 **Make sure you have Open edX [devstack](https://github.com/openedx/devstack) with lms running before trying this**
