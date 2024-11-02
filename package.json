@@ -67,7 +67,7 @@
     "@edx/browserslist-config": "^1.2.0",
     "@edx/reactifex": "1.1.0",
     "copy-webpack-plugin": "^11.0.0",
-    "piral-cli": "1.0.1",
+    "piral-cli": "1.7.1",
     "piral-cli-dotenv": "^0.2.0",
     "piral-cli-webpack5": "1.0.1",
     "reactifex": "1.1.1",
