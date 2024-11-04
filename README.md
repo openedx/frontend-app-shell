@@ -1,5 +1,7 @@
 # frontend-app-shell
 
+### This repository is a proof-of-concept and has been archived. This effort is being continued in the [`frontend-base` repository](https://github.com/openedx/frontend-base/). 
+
 The `frontend-app-shell` repository is a proof of concept for decomposing Open edX Micro Frontends (MFEs) into 'pilets' that can be loaded into a [Piral](https://piral.io) shell service. The context for this proof of concept can be found in [OEP-XXXX](https://github.com/openedx/open-edx-proposals/blob/426f6e09ffe615e77aa9205281d77012385a08d4/oeps/architectural-decisions/oep-XXXX-modular-micro-frontend-domains.rst#id1) and [FC-0007 Modular MFE Domains Discovery](https://openedx.atlassian.net/wiki/spaces/COMM/pages/3614900241/FC-0007+-+Modular+MFE+Domains+Discovery).
 
 ## Overview
